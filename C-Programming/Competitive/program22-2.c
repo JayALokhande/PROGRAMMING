@@ -1,0 +1,23 @@
+// Pattern printing input = 5 output = 5 # 4 # 3 # 2 # 1 #
+
+#include<stdio.h>
+
+void Pattrn(int iNo)
+{
+    int iCnt = 0;
+    for(int iCnt = iNo ; iCnt >= 1; iCnt--)
+    {
+        printf("%d  # ",iCnt);
+    }
+}
+
+int main()
+{
+    int iValue = 0 ;
+    printf("Enter Number Of Elements : ");
+    scanf("%d",&iValue);
+
+    Pattrn(iValue);
+
+    return 0 ;
+}
