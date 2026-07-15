@@ -1,0 +1,25 @@
+#include<stdio.h> 
+
+void Display(int Arr[])            //pointer is initilize as arr
+{
+    printf("%d\n",*Arr);
+
+    Arr++;
+
+    printf("%d\n",*Arr);
+
+    Arr++;
+
+    printf("%d\n",*Arr);
+}
+
+int main()
+{
+    int Brr[] ={10,20,30,40,50};
+
+
+    Display(Brr);
+
+
+    return 0;
+}

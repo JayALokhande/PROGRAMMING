@@ -1,0 +1,25 @@
+#include<stdio.h> 
+
+void Display(int iPtr[])            //Array is internally treated as Pointer 
+{
+    printf("%d\n",*iPtr);
+
+    iPtr++;
+
+    printf("%d\n",*iPtr);
+
+    iPtr++;
+
+    printf("%d\n",*iPtr);
+}
+
+int main()
+{
+    int Arr[] ={10,20,30,40,50};
+
+
+    Display(Arr);
+
+
+    return 0;
+}
